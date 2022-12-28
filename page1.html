@@ -7,23 +7,36 @@
 		<title>Document</title>
 		<link rel="stylesheet" href="./style.css" />
 		<script src="./tailwind.js"></script>
+		<link href="./neon_button_styles.css" rel="stylesheet" />
 	</head>
-	<body style="background-color: lightblue;">
-		<div class="sm:left-1/2 w-full sm:w-2/3 absolute h-full sm:-translate-x-1/2 sm:content-between flex flex-col p-2">
-			<div class="flex justify-between mb-5" style="height: 10%;">
+	<body style="background-color: lightblue">
+		<div
+			class="sm:left-1/2 w-full sm:w-2/3 absolute h-full sm:-translate-x-1/2 sm:content-between flex flex-col p-2"
+		>
+			<div class="flex justify-between mb-5" style="height: 10%">
 				<div class="flex items-center space-x-2 h-full">
-					<img class="h-full" src="./house-door-fill.svg" id="home_button"/>
+					<img class="h-full" src="./house-door-fill.svg" id="home_button" />
 					<h1 class="text-2xl" id="home_tempreature"><span>22</span><span> C</span></h1>
 				</div>
 				<div class="flex items-center space-x-2 h-full">
 					<p id="compressor_number"></p>
-					<img src="./png-transparent-compressor-computer-icons-industry-maintenance-service-piston-miscellaneous-blue-angle.png" class="h-full" id="compressor_icon"/>
+					<img
+						src="./png-transparent-compressor-computer-icons-industry-maintenance-service-piston-miscellaneous-blue-angle.png"
+						class="h-full"
+						id="compressor_icon"
+					/>
 					<img id="wifi_icon_container" src="./images/wifi.svg" class="h-20 w-20" />
 				</div>
 			</div>
-			<div class="flex flex-col sm:flex-row p-2 items-center justify-around sm:items-center sm:justify-start" style="height:90%;">
-				<div class="w-3/4 sm:w-1/2 flex-col flex justify-center items-center">
-					<div class="relative border border-blue-100" style="aspect-ratio: 1;width: 100%;">
+			<div class="flex flex-col p-2 items-center justify-around" style="height: 90%">
+				<div
+					class="h-full flex-col flex justify-center items-center h-1/2"
+					style="aspect-ratio: 1"
+				>
+					<div
+						class="relative border border-blue-100"
+						style="aspect-ratio: 1; width: 100%"
+					>
 						<h1
 							style="top: 27%; left: 50%; transform: translateX(-50%)"
 							class="text-2xl absolute z-20"
@@ -48,25 +61,54 @@
 						>
 							<img src="./images/-.png" class="h-8 w-8" id="minus_button" />
 							<p id="outlet_water_temperature_2"></p>
-							<img src="./images/+.png" class="h-8 w-8" id="plus_button"/>
+							<img src="./images/+.png" class="h-8 w-8" id="plus_button" />
 						</div>
 					</div>
 				</div>
 
-				<div class="flex flex-col w-full p-3 w-full sm:w-1/2 items-center justify-center sm:h-full">
+				<div class="flex flex-col w-full p-3 h-1/2 items-center justify-center">
 					<div class="flex items-center justify-around sm:justify-between">
-						<img class="h-20 w-20 sm:w-24 sm:h-24" src="./images/Eco.png" id="eco_button"/>
-						<img class="h-20 w-20 sm:w-24 sm:h-24" src="./images/Auto S.F.png" id="auto_f_s_button"/>
+						<button class="neon_button" id="eco_button">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							Eco
+						</button>
+
+						<button class="neon_button" id="auto_f_s_button">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							Auto S.F
+						</button>
 					</div>
-					<div class="flex justify-center items-center">
-						<div class="h-20 w-20 sm:w-24 sm:h-24 bg-red-500 flex flex-col justify-center items-center rounded-full hidden" id="error_indicator">
-							<h1 class="text-lg">error</h1>
-							<p id="error_number">22</p>
+					<div class="flex justify-center items-center my-2">
+						<div
+							class="p-2 rounded bg-red-500 flex flex-col justify-center items-center hidden"
+							id="error_indicator"
+						>
+							<h1 class="text-lg">error <span id="error_number">22</span></h1>
+							
 						</div>
 					</div>
-					<div class="flex justify-around sm:justify-between items-center">
-						<img class="h-20 w-20 sm:w-24 sm:h-24" src="./images/Menu.png" id="menu_button" />
-						<img class="h-20 w-20 sm:w-24 sm:h-24" src="./images/Start.png" id="start_button"/>
+					<div class="flex justify-around items-between">
+						<button class="neon_button" id="menu_button">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							Menu
+						</button>
+
+						<button class="neon_button" id="start_button">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							Start
+						</button>
 					</div>
 				</div>
 			</div>

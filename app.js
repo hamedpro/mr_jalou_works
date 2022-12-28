@@ -55,7 +55,7 @@ render_page_1({
 	home_temperature: '002',
 	set_point_max: 100,
 	set_point_min: 0,
-	outlet_water_temperature: 50,
+	outlet_water_temperature: 60,
 	eco_button_onclick: () => { alert('eco button') },
 	auto_s_f_onclick: () => { alert('auto f s') },
 	menu_button_onclick: () => { alert('menu button onclick') },
